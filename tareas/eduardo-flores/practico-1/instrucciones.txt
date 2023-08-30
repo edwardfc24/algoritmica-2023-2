@@ -1,0 +1,6 @@
+Para dejar sus tareas deben tener una carpeta dentro de la carpeta "tareas" con sunombre separado por guiones.
+Dentro de esa carpeta deben crear otra carpeta por cada proyecto a presentar.
+- tareas
+---- eduardo-flores
+--------- proyecto-1
+-------------- mi_archivo.py
