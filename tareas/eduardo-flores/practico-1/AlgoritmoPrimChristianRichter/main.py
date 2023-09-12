@@ -1,8 +1,8 @@
-from kruskal import Kruskal
+from prim import Prim
 
 
 if __name__ == '__main__':
-    kruskal = Kruskal()
+    prim = Prim()
     nodes = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
     edges = [
         ('a', 'b', 7),
@@ -17,5 +17,5 @@ if __name__ == '__main__':
         ('d', 'b', 9),
         ('b', 'e', 7)
     ]
-    met, weight = kruskal.apply_kruskal(nodes, edges)
-    print(met,f"peso total: {weight}")
+    met, weigth= prim.apply_prim(nodes, edges)
+    print(met, f"peso total: {weigth}")
