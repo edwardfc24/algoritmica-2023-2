@@ -53,7 +53,8 @@ class Prim:
             free_edges = self.free_edges(edges, node_first)
             if not free_edges:
                 break
-            origin, destination, weight = free_edges[counter]
+            min_edge = free_edges[counter] 
+            origin, destination, weight = min_edge
             if self.check_union(origin, destination):
                 self.met.append(free_edges[counter])
                 self.edges.pop(counter)

@@ -17,7 +17,7 @@ if __name__ == '__main__':
         ('b', 'e', 7)
     ]
 
-    met = prim.apply_prim(nodes, edges, nodes[1])
+    met = prim.apply_prim(nodes, edges, nodes[3])
     print(met)
 
     cost = prim.get_weight(met)
