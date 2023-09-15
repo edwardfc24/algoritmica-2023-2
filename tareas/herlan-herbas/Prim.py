@@ -18,7 +18,6 @@ class Prim:
         for node in nodes:
             self.initialize_data(node)
         
-        # Elegir un nodo inicial arbitrario
         start_node = nodes[0]
         self.nodes[start_node] = start_node
         
@@ -36,7 +35,6 @@ class Prim:
             if not eligible_edges:
                 break
             
-            # Elegir la arista de menor peso entre los nodos elegibles
             min_edge = min(eligible_edges, key=lambda edge: edge[self._weight])
             origin, destination, weight = min_edge
             
