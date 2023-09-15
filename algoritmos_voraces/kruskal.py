@@ -14,7 +14,8 @@ class Kruskal:
         self._origin = 0
         self.destination = 1
         self.level = {}
-    
+        self.total_weight = 0
+
     def sort_edges(self, edges):
         # for index in range(0, len(edges) - 1):
         #     aux = edges[index]
@@ -23,7 +24,7 @@ class Kruskal:
         #         edges[index + 1] = aux
         # return edges
         return sorted(edges, key=lambda edge: edge[self._weight])
-    
+
     def initialize_data(self, node):
         self.nodes[node] = node
         self.level[node] = 0
@@ -35,7 +36,7 @@ class Kruskal:
             self.nodes[node] = self.find_root(self.nodes[node])
             # Acá hacemos recursivo el método para encontrar el nodo de nivel 0
         return self.nodes[node]
-    
+
     def check_union(self, origin, destination):
         # 1er paso: Encontrar los nodos raíz de cada uno
         origin_root = self.find_root(origin)
@@ -51,9 +52,12 @@ class Kruskal:
                 # Si los niveles son iguales, se cambia el nivel del último nodo guardado
                 if self.level[origin_root] == self.level[destination_root]:
                     self.level[destination_root] += 1
+            return True
+        return False
+
 
     def apply_kruskal(self, nodes, edges):
-        # Primero ingresar los nodos para formar el nivel 
+        # Primero ingresar los nodos para formar el nivel
         for node in nodes:
             self.initialize_data(node)
         # Ordenamos las aristas de menor a mayor peso
@@ -63,7 +67,7 @@ class Kruskal:
             # Obtener los valores de la tupla
             origin, destination, weight = edge
             # Aquí viene la lógica del pseudo código
-            if self.find_root(origin) != self.find_root(destination):
-                self.check_union(origin, destination)
+            if self.check_union(origin, destination):
                 self.met.append(edge)
-        return self.met
+                self.total_weight += weight
+        return self.met, self.total_weight
