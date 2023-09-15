@@ -1,7 +1,7 @@
-from Kruskal import Kruskal
+from Prim import Prim
 
 if __name__ == '__main__':
-    kruskal = Kruskal()
+    kruskal = Prim()
     nodes = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
     edges = [
         ('a', 'b', 7),
