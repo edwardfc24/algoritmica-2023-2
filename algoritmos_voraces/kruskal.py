@@ -51,6 +51,8 @@ class Kruskal:
                 # Si los niveles son iguales, se cambia el nivel del último nodo guardado
                 if self.level[origin_root] == self.level[destination_root]:
                     self.level[destination_root] += 1
+            return True
+        return False
 
     def apply_kruskal(self, nodes, edges):
         # Primero ingresar los nodos para formar el nivel 
@@ -63,7 +65,19 @@ class Kruskal:
             # Obtener los valores de la tupla
             origin, destination, weight = edge
             # Aquí viene la lógica del pseudo código
-            if self.find_root(origin) != self.find_root(destination):
-                self.check_union(origin, destination)
+            if self.check_union(origin, destination):
                 self.met.append(edge)
+            #if self.find_root(origin) != self.find_root(destination):
+            #    self.check_union(origin, destination)
+            #    self.met.append(edge)
         return self.met
+    
+    def get_met_cost(self, met=None):
+        cost = 0
+        if met:
+            for edge in met:
+                cost += edge[self._weight]
+        else:
+            for edge in self.met:
+                cost += edge[self._weight]
+        return cost
