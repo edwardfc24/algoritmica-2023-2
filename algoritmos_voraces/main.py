@@ -19,3 +19,4 @@ if __name__ == '__main__':
     ]
     met = kruskal.apply_kruskal(nodes, edges)
     print(met)
+    print(f'El camino tiene un peso de {kruskal.get_met_cost()}')
