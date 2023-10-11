@@ -1,0 +1,138 @@
+[33mcommit 4b4a1c8bba4ba73d7e3ca7408655387bb5328931[m[33m ([m[1;36mHEAD -> [m[1;32mdev[m[33m, [m[1;31morigin/dev[m[33m)[m
+Author: srpatolino <johnmichaelll017@gamil.com>
+Date:   Tue Oct 10 18:28:35 2023 -0400
+
+    segundo pratico
+
+A	tareas/practico2/TareaAlg.ipynb
+A	tareas/practico2/ridge_inv.ipynb
+
+[33mcommit ecc7ec05a8c82d85bf6106ab1a8ae047cd0342f1[m
+Author: Lourdes Vaca <louvp24@gmail.com>
+Date:   Tue Oct 10 09:06:44 2023 -0400
+
+    commit del proyecto dos, modelo de regresion lineal
+
+A	tareas/lourdes-vaca/practico-dos/modelo_regresion/dataset_fish.csv
+A	tareas/lourdes-vaca/practico-dos/modelo_regresion/fish_model.ipynb
+A	tareas/lourdes-vaca/practico-dos/modelo_regresion/requirements.txt
+
+[33mcommit 2fee9b95f81a2011211b96dea3c68ab744dda7bf[m
+Merge: 2d047d8 d0f7fd9
+Author: Eduardo Flores <eduardofc24@gmail.com>
+Date:   Tue Sep 26 21:18:35 2023 -0400
+
+    Merge pull request #20 from edwardfc24/feature/eduardo-flores
+    
+    Add pandas introduction notebook
+
+[33mcommit d0f7fd9f8144eec18db067bc53f2f5e33c4f5918[m
+Author: Eduardo Flores <eduardofc24@gmail.com>
+Date:   Tue Sep 26 21:17:43 2023 -0400
+
+    Add pandas introduction notebook
+
+M	algoritmos_voraces/kruskal.py
+M	algoritmos_voraces/main.py
+A	pandas_intro/dummy.ipynb
+A	pandas_intro/first_test.py
+A	pandas_intro/intro.ipynb
+A	pandas_intro/requirements.txt
+A	pandas_intro/titles.csv
+
+[33mcommit 2d047d8df411b5125f3d504ec70824553eda5b01[m[33m ([m[1;31morigin/johnyujra[m[33m, [m[1;31morigin/feature/john-yujra[m[33m, [m[1;32mjohnyujra[m[33m, [m[1;32mfeature/john-yujra[m[33m)[m
+Author: Jorge Poriz Rojas <108009051+JorgePorizR@users.noreply.github.com>
+Date:   Fri Sep 15 15:34:51 2023 -0400
+
+    Delete tareas/jorge-poriz-rojas/proyecto-1 directory
+
+D	tareas/jorge-poriz-rojas/proyecto-1/main.py
+D	tareas/jorge-poriz-rojas/proyecto-1/prim.py
+
+[33mcommit 975b0adee8f04e56636817a5ac4560451eaddf1d[m
+Merge: 191707a b5ff4ef
+Author: Jorge Poriz Rojas <108009051+JorgePorizR@users.noreply.github.com>
+Date:   Fri Sep 15 02:14:52 2023 -0400
+
+    Merge pull request #6 from edwardfc24/feature/jorge-poriz-rojas
+    
+    add files test
+
+[33mcommit b5ff4ef69b1f971d690aa54b566f8c71b85c0d10[m
+Author: Jorge Poriz Rojas <717001@nur.edu.bo>
+Date:   Fri Sep 15 02:13:12 2023 -0400
+
+    add files test
+
+A	tareas/jorge-poriz-rojas/proyecto-1/main.py
+A	tareas/jorge-poriz-rojas/proyecto-1/prim.py
+
+[33mcommit 191707ab4447d0a84d09b5a6adf9598c46606615[m
+Merge: bdb95b2 94335f1
+Author: Eduardo Flores <eduardofc24@gmail.com>
+Date:   Tue Sep 5 21:14:28 2023 -0400
+
+    Merge pull request #3 from edwardfc24/feature/eduardo-flores
+    
+    Feature/eduardo flores
+
+[33mcommit 94335f15b7b182aae992600789c366c5aeb635f8[m
+Author: Eduardo Flores <eduardofc24@gmail.com>
+Date:   Tue Sep 5 21:13:21 2023 -0400
+
+    Added Kruskal algorithm
+
+A	algoritmos_voraces/kruskal.py
+A	algoritmos_voraces/main.py
+
+[33mcommit 639bb88d442c275565fe3d1e0b8e3648cfeba7df[m
+Merge: d9b115f bdb95b2
+Author: Eduardo Flores <eduardofc24@gmail.com>
+Date:   Tue Aug 29 20:36:13 2023 -0400
+
+    Merge branch 'dev' into feature/eduardo-flores
+
+[33mcommit bdb95b277986b7b28ff886f533bfc749b5ff125c[m
+Merge: 5c58364 3b023e4
+Author: Eduardo Flores <eduardofc24@gmail.com>
+Date:   Tue Aug 29 20:33:26 2023 -0400
+
+    Merge pull request #2 from edwardfc24/feature/assigments-folder
+    
+    Add workflow for subjects
+
+[33mcommit 3b023e43c9187d25025dd02d1de149caa76ae0ea[m[33m ([m[1;31morigin/feature/assigments-folder[m[33m)[m
+Author: Eduardo Flores <eduardofc24@gmail.com>
+Date:   Tue Aug 29 20:29:58 2023 -0400
+
+    Add workflow for subjects
+
+A	tareas/eduardo-flores/practico-1/instrucciones.txt
+
+[33mcommit 5c58364acf3d10c698a899d1b52b93c70cba515b[m
+Merge: fc92506 d9b115f
+Author: Eduardo Flores <eduardofc24@gmail.com>
+Date:   Fri Aug 25 21:49:13 2023 -0400
+
+    Merge pull request #1 from edwardfc24/feature/eduardo-flores
+    
+    Changes in readme file and greetings added
+
+[33mcommit d9b115f83d772dec45d61142ef626057c9d16450[m
+Author: Eduardo Flores <eduardofc24@gmail.com>
+Date:   Fri Aug 25 21:41:35 2023 -0400
+
+    Changes in readme file and greetings added
+
+M	README.md
+A	greetings.py
+
+[33mcommit fc92506759047d3008dac3a54d5dd413117024b0[m
+Author: Eduardo Flores <eduardofc24@gmail.com>
+Date:   Fri Aug 25 20:59:21 2023 -0400
+
+    Initial commit
+
+A	.gitignore
+A	LICENSE
+A	README.md
