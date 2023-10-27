@@ -1,15 +1,14 @@
 import random
 
 class Prim:
-
     def __init__(self) -> None:
-        self.nodes = {}
-        self.edges = []
-        self.met = []
-        self._weight = 2
+        self.nodes = {} #diccionario vacio guardando un nodo clave valor para verificar si un nodo se visito o no
+        self.edges = [] #Lista vacia que contendra las aristas del grafo
+        self.met = [] #Lista que contendra el M.E.T
+        self._weight = 2 #
         self._origin = 0
         self.destination = 1
-        self.level = {}
+        self.level = {} #seguimiento del nivel de cada nodo
 
     def initialize_data(self, node):
         self.nodes[node] = node
@@ -22,10 +21,6 @@ class Prim:
     def obtenerAristaMenor(self, aristas):
         # Devolver la arista de menor peso en la lista de aristas
         return min(aristas, key=lambda edge: edge[self._weight])
-
-    def nodoVisitado(self, nodo):
-        # Verificar si un nodo ha sido visitado (ya está en el árbol de expansión mínima)
-        return nodo in self.nodes
 
     def agregarAlArbol(self, arista):
         # Agregar una arista al árbol de expansión mínima
@@ -43,10 +38,10 @@ class Prim:
         random_node = random.choice(nodes)
         visited_nodes = {random_node}
         unvisited_nodes = set(nodes) - visited_nodes
-
+        #mientras haya nodo sin visitar
         while unvisited_nodes:
             # Obtener todas las aristas conectadas a los nodos visitados
-            connected_edges = []
+            connected_edges = []# Lista que contendra las aristas conectadas 
             for visited_node in visited_nodes:
                 connected_edges.extend(self.obtenerAristas(visited_node, edges))
 
